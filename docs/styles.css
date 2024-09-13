@@ -1,40 +1,40 @@
+html, body {
+	height: 100%;
+}
+
 h1 {
-  text-align: center;
-  line-height: 100px;
+  line-height: 112px;
   color: midnightblue;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 1s box-shadow;
+  position: relative;
  }
 
 body {
   background-image: url(https://images.unsplash.com/photo-1669780080326-c5b82a6476fe?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFpbmJvdyUyMGdyYWRpZW50fGVufDB8fDB8fHww);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 div {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 300px;
-  margin-bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 500px;
-  height: 250px;
-  background: white;
-  border-radius: 75px;
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 50px;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  transition: 1s box-shadow;
+  width: 100%;
+  height: 100%;
 }
 
-div:hover {
+h1:hover {
   box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
 }
 
-div:hover::before, div:hover::after {
+h1:hover::before, h1:hover::after {
   display: block;
   content: '';
   position: absolute;
@@ -46,7 +46,7 @@ div:hover::before, div:hover::after {
   animation: 1s clockwise infinite;
 }
 
-div:hover:after {
+h1:hover:after {
   background: #F3CE5E;
   animation: 2s counterclockwise infinite;
 }
