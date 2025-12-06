@@ -2,6 +2,11 @@ html, body, main {
 	height: 100%;
 }
 
+a {
+  text-decoration: none;  /* removes underline from links */
+  color: inherit;         /* optional: makes the link text keep h1 color */
+}
+
 h1 {
   line-height: 112px;
   color: midnightblue;
@@ -49,6 +54,44 @@ h1:hover::before, h1:hover::after {
 h1:hover:after {
   background: #F3CE5E;
   animation: 2s counterclockwise infinite;
+}
+
+/* RTS Page Styles */
+.rts-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.rts-video {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 35px rgba(0,0,0,0.1);
+}
+
+.rts-text {
+  font-size: 1.5em;
+  color: midnightblue;
+  max-width: 800px;
+}
+
+.rts-back {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.rts-back:hover {
+  color: #0056b3;
 }
 
 @keyframes clockwise {
